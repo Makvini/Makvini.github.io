@@ -1,0 +1,142 @@
+.how-it-happen-toggle {
+  min-width: 190px;
+
+  position: relative;
+  --toggleColor: #B6C2BA;
+
+  border-top: 3px solid #e1e8e2;
+
+  .how-it-happen-toggle-title {
+    color: var(--toggleColor);
+  }
+
+
+  &.active {
+    .how-it-happen-toggle-title + p {
+      color: #152928;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: var(--toggleColor);
+      animation: growBorder 4100ms linear forwards;
+    }
+  }
+}
+
+.how-it-happen-toggle:nth-child(1).active {
+  --toggleColor: #8B78FA;
+}
+
+.how-it-happen-toggle:nth-child(2).active {
+  --toggleColor: #DF93F9;
+}
+
+.how-it-happen-toggle:nth-child(3).active {
+  --toggleColor: #EDA48A;
+}
+
+.how-it-happen-toggle:nth-child(4).active {
+  --toggleColor: #D2C443;
+}
+
+@keyframes growBorder {
+  to {
+    width: 100%;
+  }
+}
+
+
+#how-happen-carousel {
+  border-radius: 48px;
+
+  @media screen and (max-width: 1000px) {
+    border-radius: 40px !important;
+  }
+
+  .swiper-slide {
+
+    border-radius: 48px !important;
+    overflow: hidden !important;
+
+    width: 100%;
+    max-width: 100%;
+
+    @media screen and (max-width: 1000px) {
+      border-radius: 40px !important;
+    }
+
+    &:nth-child(1) {
+      background: url("./new-assets/backgrounds/desktop/process-bg-01.png"), linear-gradient(180deg, #8B78FA 0%, #7C68EF 100%) no-repeat;
+
+      .text-content {
+        background: linear-gradient(90deg, #8B78FA 0%, rgba(139, 120, 250, 0.50) 70.00%, rgba(139, 120, 250, 0.00) 100%);
+      }
+
+      @media screen and (max-width: 1000px) {
+        background: url("./new-assets/backgrounds/mobile/procces-bg-01.png"), linear-gradient(180deg, #8B78FA 0%, #7C68EF 100%) no-repeat;
+
+        .text-content {
+          background: linear-gradient(180deg, #8B78FA 0%, rgba(139, 120, 250, 0.50) 70.00%, rgba(139, 120, 250, 0.00) 100%);
+        }
+
+      }
+    }
+
+    &:nth-child(2) {
+      background: url("./new-assets/backgrounds/desktop/process-bg-02.png"), linear-gradient(180deg, #DF93F9 0%, #CF79ED 100%) no-repeat;
+
+      .text-content {
+        background: linear-gradient(90deg, #DF93F9 0%, rgba(223, 147, 249, 0.50) 70.00%, rgba(223, 147, 249, 0.00) 100%);
+      }
+
+      @media screen and (max-width: 1000px) {
+        background: url("./new-assets/backgrounds/mobile/procces-bg-02.png"), linear-gradient(180deg, #DF93F9 0%, #CF79ED 100%) no-repeat;
+
+        .text-content {
+          background: linear-gradient(180deg, #DF93F9 0%, rgba(223, 147, 249, 0.50) 70.00%, rgba(223, 147, 249, 0.00) 100%);
+        }
+
+      }
+    }
+
+    &:nth-child(3) {
+      background: url("./new-assets/backgrounds/desktop/process-bg-03.png"), linear-gradient(180deg, #EDA48A 0%, #E49477 100%) no-repeat;
+
+      .text-content {
+        background: linear-gradient(90deg, #EDA48A 0%, rgba(237, 164, 138, 0.50) 70.00%, rgba(237, 164, 138, 0.00) 100%);
+      }
+
+      @media screen and (max-width: 1000px) {
+        background: url("./new-assets/backgrounds/mobile/procces-bg-03.png"), linear-gradient(180deg, #EDA48A 0%, #E49477 100%) no-repeat;
+
+        .text-content {
+          background: linear-gradient(180deg, #EDA48A 0%, rgba(237, 164, 138, 0.50) 70.00%, rgba(237, 164, 138, 0.00) 100%);
+        }
+
+      }
+    }
+
+    &:nth-child(4) {
+      background: url("./new-assets/backgrounds/desktop/process-bg-04.png"), linear-gradient(180deg, #EFE58A 0%, #E3D875 100%) no-repeat;
+
+      .text-content {
+        background: linear-gradient(90deg, #EFE58A 0%, rgba(239, 229, 138, 0.50) 70.00%, rgba(239, 229, 138, 0.00) 100%);
+      }
+
+      @media screen and (max-width: 1000px) {
+        background: url("./new-assets/backgrounds/mobile/procces-bg-04.png"), linear-gradient(180deg, #EFE58A 0%, #E3D875 100%) no-repeat;
+
+        .text-content {
+          background: linear-gradient(180deg, #EFE58A 0%, rgba(239, 229, 138, 0.50) 70.00%, rgba(239, 229, 138, 0.00) 100%);
+        }
+
+      }
+    }
+  }
+}

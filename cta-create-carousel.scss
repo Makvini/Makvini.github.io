@@ -1,0 +1,45 @@
+.ready-cta {
+  background: url("./new-assets/backgrounds/desktop/ready-to-create.png"), linear-gradient(180deg, #8B78FA 0%, #7C68EF 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    background: url("./new-assets/backgrounds/mobile/ready-to-create.png"), linear-gradient(180deg, #8B78FA 0%, #7C68EF 100%);
+  }
+}
+
+#cta-carousel {
+  rotate: 4deg;
+  animation: readyToCarouselVertical 10s infinite linear;
+  will-change: transform;
+
+  img {
+    object-fit: contain;
+  }
+
+  &>* {
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-top: 8px;
+    transform: translateZ(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    & {
+      animation: readyToCarouselHorizontal 30s infinite linear;
+      &>* {
+        margin-top: 0px;
+        margin-left: 8px;
+      }
+    }
+
+  }
+
+}

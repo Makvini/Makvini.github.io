@@ -1,0 +1,23 @@
+{
+  "name": "logolivery-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "sass": "^1.66.1",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "disable-scroll": "^0.6.0",
+    "glider-js": "^1.7.8",
+    "swiper": "^10.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /new-assets
+Disallow: /contractors.html
+Disallow: /404.html
+Allow: /new-assets/fav
+Allow: /new-assets/badge.png
+Allow: /index.html
+Allow: /membership.html
+
+Sitemap: https://logolivery.com/sitemap.xml
