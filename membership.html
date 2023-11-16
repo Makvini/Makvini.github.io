@@ -156,9 +156,9 @@
       charset="UTF-8"
       async
     ></script>
-    <script type="module" crossorigin src="/assets/membership-e1988c0d.js"></script>
+    <script type="module" crossorigin src="/assets/membership-e8e923d5.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/footer-animation-8e3ebe1c.js">
-    <link rel="modulepreload" crossorigin href="/assets/sliders-79b653f5.js">
+    <link rel="modulepreload" crossorigin href="/assets/sliders-f933ce59.js">
     <link rel="stylesheet" href="/assets/footer-animation.css">
     <link rel="stylesheet" href="/assets/membership.css">
   </head>
@@ -182,6 +182,7 @@
             >About</span
           >
         </li>
+        
         <li
           data-mobile-nav-link="portfolio"
           class="link-m flex items-center gap-7 py-5 px-3"
@@ -200,7 +201,7 @@
         >
           <span
             class="text-gray-40 font-kalam text-[15px] font-bold leading-[1.06] uppercase"
-            >04</span
+            >03</span
           >
           <span class="text-[#152928] text-[24px] font-[600] leading-[1.16]"
             >Pricing</span
@@ -212,11 +213,15 @@
         >
           <span
             class="text-gray-40 font-kalam text-[15px] font-bold leading-[1.06] uppercase"
-            >03</span
+            >04</span
           >
           <span class="text-[#152928] text-[24px] font-[600] leading-[1.16]"
             >FAQ</span
           >
+        </li>
+        <li data-mobile-nav-link="testimonials" class="link flex items-center gap-7 py-5 px-3">
+          <span class="text-gray-40 font-kalam text-[15px] font-bold leading-[1.06] uppercase">05</span>
+          <span class="text-[#152928] text-[24px] font-[600] leading-[1.16]">Testimonials</span>
         </li>
         <div class="h-[1.4px] w-full bg-[rgba(21,41,40,0.08)]"></div>
         <li class="link-m py-5 px-3">
@@ -248,7 +253,8 @@
     <div id="navbar" class="bg-white sticky top-0 z-40">
       <div class="py-7 relative z-[50]">
         <div class="contain flex items-center justify-between gap-2">
-          <div
+          <a
+            href="/"
             class="flex items-center justify-center min-[880px]:w-[224px] min-[880px]:h-[46px]"
           >
             <img
@@ -256,7 +262,7 @@
               src="/assets/logolivery-nav-logo-m.png"
               alt="Logolivery logo"
             />
-          </div>
+          </a>
           <ul
             data-nav
             class="hidden min-[880px]:flex gap-[10px] text-[#74857D]"
@@ -273,7 +279,7 @@
             >
               <p>Portfolio</p>
             </li>
-            
+
             <li
               data-nav-link="pricing"
               class="link-m px-[14px] py-[10px] text-[14px] font-[500] leading-[1.14]"
@@ -285,6 +291,9 @@
               class="link-m px-[14px] py-[10px] text-[14px] font-[500] leading-[1.14]"
             >
               <p>FAQ</p>
+            </li>
+            <li data-nav-link="testimonials" class="link px-[14px] py-[10px] text-[14px] font-[500] leading-[1.14]">
+              <p>Testimonials</p>
             </li>
             <li
               class="link-m px-[14px] py-[10px] text-[14px] font-[500] leading-[1.14]"
@@ -343,20 +352,21 @@
                 id="mobile-left"
                 class="max-w-[700px] min-[996px]:whitespace-nowrap min-[996px]:tracking-[-2.88px] tracking-[-0.84px;] text-gray-100 text-[40px] min-[996px]:text-[72px] font-[600] leading-[1.2]"
               >
-                Unlimited requests <br>
-                with a <span
-                class="hidden min-[676px]:inline whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
-                >Solo membership</span
-              >
-                
+                Unlimited requests <br />
+                with a
                 <span
-                class="min-[676px]:hidden whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
-                >Solo</span
-              >
-              <span
-              class=" min-[676px]:hidden whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
-              >membership</span
-            >
+                  class="hidden min-[676px]:inline whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
+                  >Solo membership</span
+                >
+
+                <span
+                  class="min-[676px]:hidden whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
+                  >Solo</span
+                >
+                <span
+                  class="min-[676px]:hidden whitespace-nowrap font-roboto min-[676px]:rounded-[16px] rounded-[8px] px-[12px] bg-light_pink text-pink italic font-[500]"
+                  >membership</span
+                >
               </p>
               <p
                 class="min-[996px]:pt-[200px] block max-[768px]:mb-[40px] min-[676px]:hidden max-w-[455px] mr-[auto] text-gray-70 min-[996px]:text-[18px] font-[500] leading-[1.6]"
@@ -376,7 +386,7 @@
                   <button
                     class="pricing-start-button bg-pink text-white px-5 py-4 rounded-[13px] text-[16px] font-[600] leading-[1.125] tracking-[-0.16px] min-[996px]:mr-10 max-[996px]:w-full"
                   >
-                    Get My Membership
+                    Get My Membership!
                   </button>
                 </a>
                 <div class="flex items-center">
@@ -403,11 +413,12 @@
           <p
             class="min-[996px]:pt-[200px] ml-[120px] hidden min-[676px]:block w-[auto] max-w-[455px] mr-[auto] text-gray-70 min-[996px]:text-[18px] font-[500] leading-[1.6]"
           >
-            Collaborate with top-tier creative professionals at a fixed monthly cost. Initiate your project now and submit limitless requests!
+            Collaborate with top-tier creative professionals at a fixed monthly
+            cost. Initiate your project now and submit limitless requests!
           </p>
         </div>
       </div>
-      
+
       <section
         class="wrapper overflow-hidden bg-mobileDesignedProductsMembership min-[676px]:bg-designedProductsMembership bg-no-repeat bg-cover max-[768px]:py-[100px] py-[50px] min-[676px]:rounded-[48px] max-[768px]:w-[100dvw] max-[768px]:ml-[-6px] relative"
       >
@@ -705,7 +716,8 @@
       </div>
       <!-- features, fusecup review, features -->
       <div
-        class="wrapper bg-gray-100 max-[768px]:px-[8px] max-[768px]:rounded-[40px] rounded-[60px] px-[24px] overflow-hidden" id="text-reveal"
+        class="wrapper bg-gray-100 max-[768px]:px-[8px] max-[768px]:rounded-[40px] rounded-[60px] px-[24px] overflow-hidden"
+        id="text-reveal"
       >
         <div class="min-[767px]:rounded-t-[48px] rounded-t-[28px] mx-1">
           <div>
@@ -967,10 +979,9 @@
                   <p
                     class="text-gray-20 max-[969px]:mb-[80px] max-[969px]:text-[22px] text-[28px] font-[500] leading-[1.35] tracking-[-0.56px]"
                   >
-                    “Shout-out to the Logolivery team,
-                    they are such a pleasure to work
-                    with. Quick turnaround and excellent
-                    result, highly recommended”
+                    “Shout-out to the Logolivery team, they are such a pleasure
+                    to work with. Quick turnaround and excellent result, highly
+                    recommended”
                   </p>
                   <div class="max-[969px]:order-4">
                     <a
@@ -1033,8 +1044,11 @@
         <div class="wrapper services">
           <p>Services</p>
           <h5>Our <span>Capabilities</span></h5>
-          <span class="text-center mt-[-44px] mb-[24px]  max-[768px]:block hidden text-gray-60 text-[16px] font-[500] leading-[1.6]">P.S. Slide right and left<br>
-            to see all categories</span>
+          <span
+            class="text-center mt-[-44px] mb-[24px] max-[768px]:block hidden text-gray-60 text-[16px] font-[500] leading-[1.6]"
+            >P.S. Slide right and left<br />
+            to see all categories</span
+          >
           <div class="services-container">
             <div class="services__item l__v">
               <svg
@@ -1068,7 +1082,7 @@
                   fill="#DF93F9"
                 />
               </svg>
-              <p>UX/UI Design</p>
+              <p>NO-CODE</p>
               <h6 class="l__h">Website Design</h6>
               <h6 class="l__h">App Design</h6>
               <h6 class="l__h">Landing Page</h6>
@@ -1108,7 +1122,7 @@
           </div>
         </div>
       </section>
- 
+
       <section id="portfolio">
         <div class="wrapper">
           <div>
@@ -1917,6 +1931,491 @@
         </div>
       </div>
 
+       <!-- testimonials -->
+    <section id="testimonials" class="px-3 testimonials bg-white">
+      <div class="contain px-6 pt-[138px] pb-[94px] max-[1030px]:pt-[124px] max-[1030px]:pb-[48px]">
+        <p class="font-kalam text-[15px] text-yellow-dark-10 font-bold uppercase mb-12 max-[1030px]:mb-8">
+          testimonials
+        </p>
+        <div class="flex w-full justify-between items-center gap-16 max-[1030px]:flex-col max-[1030px]:items-stretch">
+          <h2 class="text-gray-100 text-[64px] font-[600] leading-[1.125] max-[1030px]:text-[40px]">
+            People happy <br />
+            with <span class="italic font-[500] font-roboto">Logolivery</span>
+          </h2>
+          <div class="flex gap-[40px] max-[1030px]:gap-[22px]">
+            <a href="https://www.producthunt.com/products/logolivery/reviews" target="_blank">
+              <div class="flex gap-5 items-center max-[1030px]:gap-[10px]">
+                <img class="w-12 h-12 max-[1030px]:w-10 max-[1030px]:h-10"
+                  src="/assets/product-hunt-logo.svg" alt=""/>
+                <div>
+                  <p class="text-gray-100 text-[32px] font-[600] leading-[1.25] mb-1 max-[1030px]:text-[22px]">
+                    4.4
+                    <span class="text-gray-40 text-[16px] font-[600] max-[1030px]:text-[12px]">/ 5</span>
+                  </p>
+                  <p class="text-gray-60 text-[14px] font-[500] leading-[1.14] max-[1030px]:text-[12px]">
+                    On Product Hunt
+                  </p>
+                </div>
+              </div>
+            </a>
+            <div class="w-[1px] bg-gray-30"></div>
+            <a href="https://www.trustpilot.com/review/logolivery.com" target="_blank">
+              <div class="flex gap-5 items-center max-[1030px]:gap-[10px]">
+                <img class="w-12 h-12 max-[1030px]:w-10 max-[1030px]:h-10"
+                  src="/assets/trustoint-logo.svg" alt=""/>
+                <div>
+                  <p class="text-gray-100 text-[32px] font-[600] leading-[1.25] mb-1 max-[1030px]:text-[22px]">
+                    4.4
+                    <span class="text-gray-40 text-[16px] font-[600] max-[1030px]:text-[12px]">/ 5</span>
+                  </p>
+                  <p class="text-gray-60 text-[14px] font-[500] leading-[1.14] max-[1030px]:text-[12px]">
+                    On Trustpilot
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- reviews -->
+      <section id="reviews-section"
+        class="wrapper reviews bg-gray-10 relative rounded-[48px] pt-4 min[767px]:pt-12 pb-20 border-solid border-[1.6px] border-light-gray mb-[148px] overflow-hidden">
+        <div class="bg-gray-10">
+          <div id="reviews-list" style="transition: 750ms"
+            class="contain max-[768px]:px-4 max-h-[600px] overflow-hidden">
+            <div class="grid grid-rows-3 grid-cols-3 gap-4 max-[968px]:grid-cols-2 max-[768px]:grid-cols-1">
+              <!-- Matthew Mercer -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA84SURBVHgBzVlrjFznWX7O/cx9dvZ+8yWO3Sa2G5e4bZpNIijUSRQoEEB1QNBfCBVFVALUH6SqBBKiKkRIlFZqCURAKruVUho3JGkdSBRj5wJJY2Pv2nG83vV6b97Z2bnPOWfOhef9Zl3sTfOvlTrKyczsnPN9z/e+z/u8z/dZw/u8kiTR+GbxMnnp+Mm/El6RXJqmdd/vJg0/HliKl/tTAvbjXgK0TaD+1h9uAkhwBt/yvIzDDz80tTo3f9h03KlcITs5PPUIxu79DNJ6BAddZPUutChEFAbQEwlGyHfOE3d/tCrD0KHrCRxTh8082Pxuc4aEfwsjHUGonQ1inBzvK3794O2DC3xEItkg0Pg9ADfBFf7os5/dfuL4978yMlKcyuXzcDJ5pFMuhg88gIn7fhdet4sw4DgE53I8MyYwgjM5pm3E0OMISRxvjqlB5tIJzNR0uHYM1+K7AqmhHRBRpKHRjuHH2pc/88ndf70ZzSpByqp7iyU4ec+/eOzodn/96jOZtD2VxAmyaRfptAVDZyQsE3ESY1sOcBiGSDcQawZCgzQ1bf7nIOW66rIdh9EzGD2JogXdtOQDv5sIOVWboLxQg2VoBE0+2UL24PPf/o+zX5HAb2bx/yNIgFm+uV/7y8deyrrOvqXFObx1YRbFXAqGk4YXRHBHtuHX/uBLsPUYnW6CgFfMlGpcSDfiZ0aNgYLOhetJyPvkcwxT3rmYS5UIObPbo0MYMSsJUqbGe/iV34kf3W6MKNIfe+jeD36DeGpSPOZm9Nzvf/epw6lMdp/lpHDLrtuhEdiZc9PY1t/PCBhYXLuC8swJHPzoXdAEmEofgTKbMdkhkfEIutmJmDoDCX8zuJg2I1VM6dhW0rFSCYmmSyABKjXmlwvRWMw2IykAdcmUbnz+7LvXvrXv1iHhY00kRKQE4cbyI2GrjmarjYRpGhrbidF6G4vLCxgZGWCEunjh2NPY9+GDnCBCyIjJimvNNhYunocedZDuG0ZpZAcnJRD+3uB9TT/C2ppEPEQ3CJS2aIghZWBJ4TDUjmOziEymnFmw3MJitf7pfRj6hiiKALQFYHl58e5qpYWBkRHyCIxEC1k+mJqY4NJiDPTl8ezzx7Gw8ChKA0O4Vq7i2aP/gv9+6d/RaDTRVyxgfGIMI+PbcfD+wyj0D7BKuRAWVRJFFFMNtmsqChg6AVkGLJZ2V7PRn44ZpQie5zHdDS5cnyIkSbOlRPj0qy9Oyup3TZRQ31hHbX0D2dIAMpaFhCsc7c9STRO8PVzAD44dxc8/8Fv4uy/+CXYVHZRcMsQz0KrVcKXrw2s20Kh/Dff/9qPIl/qRckxV1YqbrGSDpJQCkjgaRgLP5zOdLnyqgmH2Csc0tf3Xa0QAEnEXjZaPYGmawAZRGp1gSnwGjpzy29AHs8hnMjhw6wReOf4sLk5fwC/smcQE9eLg+CAcVnubKay1mrDTKdQ6AZ578m/wm3/4GNK5PEQRYgWSkSKILsdudELO0VX8siwNmZSh9FK0sycwvVcPIC/PD7Cxto42B7d37+ZTthAElp5Cnbws9hVxz9TPYWWdHNUCTG7bDru8gIECdTJXRHpwkBVLKSE/ROO++q9HMP3q8/jlR34PLY7p+1L1TC/5J9nIOQRCjREhzzLK+RTTz+e4FvSa2Q0AWwSQohjFxT5yJkBkcRKmY/SWnegEPjLoMAKsNorsxOgAojiLbr2CFEU5k0r3+MTndJvxCD0qmYUDe/fg8tIsTEakJFqa5YJZ/brULSOpmo+Ui5IpfheBV+Co1PGWCKLdIlccNEjUWr2OPiFrJILOVUuHIHjLkLUDFHG0m0xPY4P8NBSAFKVJRY+VKHoRsuKL+TSGU3kl3F2Op+txry8QgElmqebIIupGPWAi4j71tEOqJFtTXGR6quU1uI6LQi6HFcrGeqWMnESVrc4c7YPNtheZTE+YsB9rqFBergVt1FkUE0ODcF0HHXYTlioGSkVSQ0OHqdXYbWwWm0RPZo4hbU2ilBCkDhGSkH+XtIoOZplqn+PezMFWF82NNXKtqYSzQwOQp9xkKQs1rt5gClPkS6VehShzRIE9fX4ai9U2Cqy6hz+ylxVbwLdffgNjIyU88Iv3oL9vCCNeBV5tA0YqpQDJpZE6UihmzGRzEbrA1AQg+cmxiBgvvHYcd9+x94YUd9swaAAkzb7XwfjOSabWgknyButrqj1pHDSTTsNZuwqbWjfMNjjZN6AUwLUz2LPng5i6WkG6xCzQFGSKbNpLl5DurMEa2MN0xiqttbaPy5fnMbswg2JpGP0T+5m1PgKNqYMR3j7zNs6du7iFg0yBUyii6Hts5GxPlTp0fhdKh23yp5i9bnnQNzaKLh3M/XcewNDgCM7NXMDEwDBGKOgPffITiMlLtz+HFrOQYbHMOyy0NZ09VqIUY3mtgum3XoOTL+E/T/wzbtl/Lw499PvYqFRQbbawEdHMZbbfDDCdSZPYCUxKi0XnYbMleZ4PO0cZiKWhm+rWVDaHyQ/sxuzZ8+QedZMie2F+ATupnej4OP0/r2Ji1y3svWPs7i6yO/ZhuhZz7BYj3cKVy2+yEVRYWA4qVy9g2/huGK1FnDl5DNOnX6fEWMiQGp21d24G2KbMgFEJ2TsNRqCQyfVcS6fNlFGIKdJSfn7HQ2GgHw2K9wb5eK3qY7nSwL+9fhKfytA8sAW+9NqruC/9UbgDo8jv/Ag+NGHx3g2cfOUIXGZgaHgczQbT7jdQXplnestovvM66lcaFPoYO3ZMwltZ3ZJi8shhmn06Epvdr5uITrH18Ged6h6ychORfGlVroW+0RGUSYfhkQKurlbRly9AT2dQnp/D9olxCPVdts7sh+7GOiP2rW9+kUX4LjnOGiPfC+mcSmfT5xxRhs68hZ2TNgqkUqyVUV7t3gzQIjhaUBpHgmFPTKKumkSjnoUchFoNg5wR7gnIkclJzLLdbaNo37N7B0qai/4ghU89eAiNpI1G7MPqH6f4+njue0+gW1tER1wSbX5MvZyZLSszm8novFz2XpoHZq5Ni22lNOzZaW4BmCHv6Fw6rDDGDAVyratRtCk/Pu2SdBXpkSbFNGA1pvuHkZAGs+UNDLDSM3QyHYc6l+JCzTy0ThVrdR/zM2dwdf4Mu1GDNarjymITxaKNXIHi7Xc5JjnOBtNqU9yMAhreNdSXdKUmN6c4EHsVqCpbX61QuPvZmhzVpQ2aVZ0RTbwQa5VlLK0n+PPH/xG/cudutkeaJHaPnQSZHRxGh5lohS3E7A7feeoprHBjlRQr/M7o8HmPRtZi8ayvU1sNE9V2G5mCjVad8C3SilTKUXsHhtwtAJUUtmko28yg3EwT6ZIbvBymPGfpqgNk6Ez+6atHlVUfHx1i+htYXq/hhXO0Wu0qdn5gG31hCeOlEezfPorp/5pGzLbYidmnaW673Dqsr/lgNyNHZbfnkottBB3O10zYzeiojYBSl2wF2FU9tU6hjCgpOlU+8WkQmE6PlS1Gk24e3ztxFqtM68du26U2VGwH8NtN1WL9oIksoznGqo8ZydlrVSVPaX8UumdzsVXcOu6gvOGhn316LagjS1kbHaHX5BwBtwL7DxSw3GSBqA3mjTLT7irP1j/AzkC+2WxrIjkBK3VtvYVXLq3gtbdmyEWWEn3dSq1Jz9fBaDaFsUKBYG3ctm8vBsfH0CVPf3h+HqfOzFIBqIWaFFsaSSeNDc7Vl/Ywyz6f0N6PDacwP9fBQJGFN57DIsddYmB0Q3tvil2mz3RTCNh7xX3IQo69fBpvzcxxHxxQbEM65Q3l2S5eXcO24X7s/ThTOjnGVigupwjNzuKbz53Cd35wcnPvoaFUKrGLxFL8CAKXjinLRY1wM1XB0uwShrdbuLrIVstCXeG81Y2A29qtVUyNazTphpl7QT+3UscT330Z5cq6Khxp8Mp76KKJ4lCAF984p3Tscw8fomnNcYMU4m//4Rm8OXMJvmzuyV2PGfjf6TMEn+O4JuWkxXdDdatstkBveSem3z5B+SI/HXYmGuEg7kncTQDFeMvBQtBqqEgeOX4Ky9dWlHPs0bXnIA2mz6IFkwTEjOibTOWXnnoGf/o7v46/ePJpzK2WKfhsl7wc2q48QbjMioRPPF5AQyL6l7B9VumeEo7x4KG76JxY+Q5VYrWNU9ML5P+WFEsvdjlxyH1CyGq+srBEaaDKk3Nyq5hJBZOuV/ygRNKynN6GfLWOP3viabTYu/O0/jZdtWzGDd1SPlAiJ75PNkhiGLgfUMC8iM6dG7R3ZlK4d8LB3FIDC9cadLE6hvqd2o0Ao0ymULcMHgrRlp+7XFYWStJgGqYCo+k97ya51Zhy8WyS+oiL0Km0kzv3YO7Su2q3ppnisg0CNJTLFp8XCyfYq2TT1CVF5PCoS0pIRhYX17B4vg9GiWDYXvfuKuK227NXNvGpU4Xw1jvvrhmOfsqnIC9Xqopzmtrl97gg28aE6ZZiMGmhLIf2jCbUddNKcCvrZXYiRoxptQhY9r0CKBKXbNkqmjKVZMBkb/dZdFJsYRgqRzR90SMdGrjjAFvmiI/KRuf5TYChIFBnctlC8UgUGyhXG2oDI9HxvDYdTUsdVYi8xOqKeoWD3lGFRDriRDrpgF6Qlaaa/M2QXRp/i5nOMOww1RyX6ZXdnex5vMBT81QrHaxXU+gkTS7QXzh48GMnpTTkGE7fPObyPvHpzx2Nw+jUIM9iEu4fArXL57Ga+EPuNUzbUqdW8tmxuUmy5O88eaDL1hhFYb+SFkUFQa+pxYSbZzFR1NNa3w/UuB6du7x3WOkt2rqZN2I4gUVJs4/8xscfl7NCTwJ3vZ5llxJ/+P4HH613vIWAKxPuELwqBGMTTO9EoKdvunpUU3ztdHrb0l6Ee3ckCm7S462uKcqIa/JpjTz6Sbk3iiIVfTkeWV3y8e751Ne//Mc/lDNC7/ppqwK4eaJZu/2O++bNdN+vsuceFYACTmkfIyCHlhG3icIdAS5phtrjyP96BSPPqBTGiRpYLUgSpFKvqU2RT851qBRyf7xJJSmcdNr5wpN/f+IL2DwOvl7F73sEfNddU1OXLs0dpjTs4yHkPofptRxbRU9V649G0Hqp3VyQyX4sNLBtOZOB4rPim9dSKd2oVtV+2KIxTqXcs/l84flDh37pyOOP/9X1I+D69dPV9wDcBCmLT6N36vWzdYh+4+tn5Z8h/g+7pW669Zop0gAAAABJRU5ErkJggg==" alt=""/>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Matthew Mercer
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO at <a class="link" target="_blank" href="https://www.techtalentdelivery.com/"><span
+                          class="underline">Tech Talent Delivery</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-trustpilot ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="trustpilot">
+                      <path id="v" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2777 21.5493C17.5531 21.5493 21.8297 17.2727 21.8297 11.9973C21.8297 6.72189 17.5531 2.44531 12.2777 2.44531C7.00229 2.44531 2.72571 6.72189 2.72571 11.9973C2.72571 17.2727 7.00229 21.5493 12.2777 21.5493ZM18.6636 9.94311L13.785 9.94216L12.2778 5.30273L10.7705 9.94169L5.89197 9.94075L9.83897 12.8093L8.33172 17.4497L12.2782 14.5821L16.2238 17.4497L15.0576 13.8604L12.2784 14.5799L14.7168 12.8086L14.7173 12.8102L18.6636 9.94311Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “I engaged with Logolivery to design a logo and brand book for my new start-up and couldn't be happier
+                  with the results. Iryna and the team were really attentive to what I was looking for, and responded
+                  quickly to any questions I had. They produced some excellent concept logos and colour palettes, which
+                  resulted in a high-quality brand book that we're delighted with.
+
+                  I wouldn't hesitate to use them again, thank you again Iryna and the Logolivery team!”
+                </p>
+              </div>
+              <!-- Aymeric du Bouchet -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="data:image/png;base64,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" alt=""/>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Aymeric du Bouchet
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Founder of <a class="link" target="_blank" href="https://execpal.ai/"><span
+                          class="underline">ExecPal</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-trustpilot ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="trustpilot">
+                      <path id="v" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2777 21.5493C17.5531 21.5493 21.8297 17.2727 21.8297 11.9973C21.8297 6.72189 17.5531 2.44531 12.2777 2.44531C7.00229 2.44531 2.72571 6.72189 2.72571 11.9973C2.72571 17.2727 7.00229 21.5493 12.2777 21.5493ZM18.6636 9.94311L13.785 9.94216L12.2778 5.30273L10.7705 9.94169L5.89197 9.94075L9.83897 12.8093L8.33172 17.4497L12.2782 14.5821L16.2238 17.4497L15.0576 13.8604L12.2784 14.5799L14.7168 12.8086L14.7173 12.8102L18.6636 9.94311Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Efficient process and happy with the result.”
+                </p>
+              </div>
+              <!-- Paul -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="data:image/png;base64,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" alt=""/>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Paul
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Startup Founder
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-trustpilot ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="trustpilot">
+                      <path id="v" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2777 21.5493C17.5531 21.5493 21.8297 17.2727 21.8297 11.9973C21.8297 6.72189 17.5531 2.44531 12.2777 2.44531C7.00229 2.44531 2.72571 6.72189 2.72571 11.9973C2.72571 17.2727 7.00229 21.5493 12.2777 21.5493ZM18.6636 9.94311L13.785 9.94216L12.2778 5.30273L10.7705 9.94169L5.89197 9.94075L9.83897 12.8093L8.33172 17.4497L12.2782 14.5821L16.2238 17.4497L15.0576 13.8604L12.2784 14.5799L14.7168 12.8086L14.7173 12.8102L18.6636 9.94311Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “If you're a startup, Logolivery is the ideal option. I am extremely grateful to Artur for creating a
+                  stunning logo for my company. I wholeheartedly endorse their services!”
+                </p>
+              </div>
+              <!-- J Hill -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="data:image/png;base64,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" alt=""/>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      J Hill
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Founder of Character Class
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-trustpilot ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="trustpilot">
+                      <path id="v" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2777 21.5493C17.5531 21.5493 21.8297 17.2727 21.8297 11.9973C21.8297 6.72189 17.5531 2.44531 12.2777 2.44531C7.00229 2.44531 2.72571 6.72189 2.72571 11.9973C2.72571 17.2727 7.00229 21.5493 12.2777 21.5493ZM18.6636 9.94311L13.785 9.94216L12.2778 5.30273L10.7705 9.94169L5.89197 9.94075L9.83897 12.8093L8.33172 17.4497L12.2782 14.5821L16.2238 17.4497L15.0576 13.8604L12.2784 14.5799L14.7168 12.8086L14.7173 12.8102L18.6636 9.94311Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Using Logolivery was a great experience and I highly recommend it. It was great and worked with me to
+                  make a logo that met all my needs and fit the style I wanted. Definitely going back for any design
+                  needs.”
+                </p>
+              </div>
+              <!-- Guelherme -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="data:image/png;base64,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" alt="" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Guelherme
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Startup Founder
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Logolivery is more than excellent it's perfect! I ordered a logo earlier this week and am so
+                  surprised by the result! It's so professional, clean, and minimalist. Their brand book is excellent
+                  and answers a lot of questions. Highly recommend
+                </p>
+              </div>
+              <!-- Guy Pinchuk -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/assssw.png" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Guy Pinchuk
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Co-Founder & CTO at <a class="link" target="_blank" href="https://www.gocubic.io/"><span
+                          class="underline">Cubic</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Great concept, super easy to use, and communication with the designers and the team is awesome!”
+              </div>
+              <!-- Antoine Milkoff -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/antonie.svg"
+                    alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Antoine Milkoff
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO of <a class="link" target="_blank" href="https://www.postwell.io/"><span
+                          class="underline">Postwell</span></a> and <a class="link" target="_blank"
+                        href="https://www.unmake.io/"><span class="underline">unmake.io</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-twitter ml-auto w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="25"
+                    height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                      d="M19.0381 2.25L22.3461 2.25L15.1191 10.51L23.6211 21.75L16.9641 21.75L11.7501 14.933L5.78416 21.75L2.47416 21.75L10.2042 12.915L2.04816 2.25L8.87416 2.25L13.5871 8.481L19.0381 2.25ZM17.8771 19.77L19.7101 19.77L7.87816 4.126L5.91116 4.126L17.8771 19.77Z"
+                      fill="#B6C2BA" />
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Postwell now has a logo, and it's absolutely awesome. A huge thanks to logolivery who made this logo
+                  for us with love from Ukraine”
+                </p>
+              </div>
+              <!-- Scott Lesser -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/scott.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Scott Lesser
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Startup Founder
+
+                    </p>
+                  </div>
+                  
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="ph">
+                    <path id="v"
+                      d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                      fill="#B6C2BA" />
+                  </g>
+                </svg>
+                  
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Logolivery did a fantastic job of delivering a well-thought logo and brand for an incredibly reasonable price!”
+                </p>
+              </div>
+              <!-- Fernando Kylas -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/fernando.svg"
+                    alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Fernando Kylas
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO at <a class="link" target="_blank" href="https://fernandokylas.com/"><span
+                          class="underline">Fourlines
+                          Design Studio</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Pavel has been very communicative throughout the process, and the results are fantastic.”
+                </p>
+              </div>
+              <!-- Sara Boudam -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/sara.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Sara Boudam
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Co-founder of <a class="link" target="_blank" href="https://www.postwell.io/"><span
+                          class="underline">Postwell</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Had the best experience with Logolivery, they are truly talented designers who love their job and it
+                  shows! Thank you for the wonderful logo you designed, I’m in love with it”
+                </p>
+              </div>
+              <!-- Girish Kumar -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/girish.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Girish Kumar
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO of <a class="link" target="_blank" href="https://fusecup.co/"><span
+                          class="underline">Fusecup</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-trustpilot ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="trustpilot">
+                      <path id="v" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.2777 21.5493C17.5531 21.5493 21.8297 17.2727 21.8297 11.9973C21.8297 6.72189 17.5531 2.44531 12.2777 2.44531C7.00229 2.44531 2.72571 6.72189 2.72571 11.9973C2.72571 17.2727 7.00229 21.5493 12.2777 21.5493ZM18.6636 9.94311L13.785 9.94216L12.2778 5.30273L10.7705 9.94169L5.89197 9.94075L9.83897 12.8093L8.33172 17.4497L12.2782 14.5821L16.2238 17.4497L15.0576 13.8604L12.2784 14.5799L14.7168 12.8086L14.7173 12.8102L18.6636 9.94311Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Logolivery is a fantastic design agency that has truly exceeded my expectations. They were able to
+                  create an amazing logo for my company that perfectly captures the essence of our brand. Not only that,
+                  but we have also been utilizing their Logolivery+ service to help us with various design problems, and
+                  we have been amazed by their creativity and problem-solving skills.”
+                </p>
+              </div>
+              <!-- Gustav Ekerot -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/gustav.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Gustav Ekerot
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Product Designer at <a class="link" target="_blank" href="https://www.tabextend.com/"><span
+                          class="underline">tabExtend</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Shout-out to the Logolivery team, they are such a pleasure to work with. Quick turnaround and excellent result, highly recommended”
+                </p>
+              </div>
+              <!-- Adam Říha -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/adam.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Adam Říha
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO of <a class="link" target="_blank" href="https://postflow.app/"><span
+                          class="underline">PostFlow</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Super fast delivery. Great communication. Eye-catching design.”
+                </p>
+              </div>
+              <!-- Kenneth Mak -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/keneth.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Kenneth Mak
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      Founder of <a class="link" target="_blank" href="https://shopmatey.com/"><span
+                          class="underline">Shopmatey</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Thanks to Logolivery, I was able to get a neat and well thought out logo. It is definitely a great
+                  service at an affordable price”
+                </p>
+              </div>
+              <!-- Andrew Kozik -->
+              <div
+                class="review-item rounded-[20px] px-8 pb-[40px] pt-8 bg-white border-solid border-[1.6px] border-light-gray max-[768px]:px-6 max-[768px]:pb-8">
+                <div class="flex mb-[28px]">
+                  <img class="w-9 h-9 mr-[14px]" src="/assets/andrew.svg" alt="Postwell Co-founder avatar" />
+                  <div class="flex flex-col gap-1">
+                    <p class="text-gray-100 font-kalam text-[16px] font-bold leading-[1]">
+                      Andrew Kozik
+                    </p>
+                    <p class="text-gray-60 text-[12px] font-[600] leading-[1.16]">
+                      CEO of <a class="link" target="_blank" href="https://lemons.studio/"><span
+                          class="underline">Lemons</span></a>
+                    </p>
+                  </div>
+                  <svg class="review-item-icon-postwel ml-auto w-6 h-6" width="25" height="24" viewBox="0 0 25 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="ph">
+                      <path id="v"
+                        d="M12.8342 22C7.31138 22 2.83423 17.5228 2.83423 12C2.83423 6.47715 7.31138 2 12.8342 2C18.357 2 22.8342 6.47715 22.8342 12C22.8342 17.5228 18.357 22 12.8342 22ZM14.1677 12H11.3342V9H14.1677C14.9961 9 15.6677 9.67157 15.6677 10.5C15.6677 11.3284 14.9961 12 14.1677 12ZM14.1677 7H9.33423V17H11.3342V14H14.1677C16.1007 14 17.6677 12.433 17.6677 10.5C17.6677 8.567 16.1007 7 14.1677 7Z"
+                        fill="#B6C2BA" />
+                    </g>
+                  </svg>
+                </div>
+                <p class="text-gray-70 text-[16px] font-[500] leading-[1.625] line-clamp-4">
+                  “Thank you for the logo. The folks created the logo exactly how I imagined it in my head. Special
+                  thank you to Rina, she made final fixes even on a weekend.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="reviews-toggle"
+          class="more-reviews-button contain bg-gray-100 whitespace-nowrap absolute bottom-[12px] left-1/2 -translate-x-1/2 rounded-[13px] px-[17px] py-[20px] border-[1.6px] border-solid border-light-gray text-white font-[600] leading-[1.125] text-[16px] z-10">
+          More Customer Reviews
+        </button>
+      </section>
+    </section>
+
       <section
         class="mready-cta overflow-hidden max-h-[497px] max-[768px]:min-h-[914px] w-[100dvw] max-[768px]:ml-[-6px] my-0 mr-0 ml-[-12px]"
         style="margin-right: 0; outline: none; border: none"
@@ -2256,5 +2755,4 @@
       }
     }
   </script>
-  
 </html>
