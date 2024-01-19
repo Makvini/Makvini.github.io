@@ -14,22 +14,19 @@
 .hero__logo {
   margin-top: 520px;
   display: inline-flex;
-  padding: 27px 20px 19px 20px;
+  padding: 21px 20px 19px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
   border: 1px solid #2d2d2d;
   background: #171717;
 }
-.hero__logo p {
+.hero__logo img {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #000;
-  font-family: Inter;
-  font-size: 96px;
-  max-height: 90px;
+  max-height: 96px;
   height: 100%;
   font-style: normal;
   font-weight: 400;
@@ -68,26 +65,20 @@
   .hero__logo {
     margin-top: 421px;
     display: inline-flex;
-    padding: 13.353px 11.235px 10.647px 11.765px;
+    padding: 12.353px 11.235px 11.647px 11.765px;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
     border: 1px solid #2d2d2d;
     background: #171717;
   }
-  .hero__logo p {
+  .hero__logo img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #000;
-    font-family: Inter;
-    font-size: 56px;
     max-height: 56px;
     height: 100%;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   .hero__h1 {
     font-size: 80px;
@@ -131,6 +122,9 @@
   text-decoration: none;
   position: relative;
   height: 354px;
+}
+.card.soon {
+  cursor: auto;
 }
 
 .card:hover::before {
