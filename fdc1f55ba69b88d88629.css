@@ -1,0 +1,423 @@
+@charset "UTF-8";
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -381px;
+  height: 908px;
+  width: 100%;
+  border-radius: 1440px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero__logo {
+  margin-top: 520px;
+  display: inline-flex;
+  padding: 27px 20px 19px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #2d2d2d;
+  background: #171717;
+}
+.hero__logo p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 96px;
+  max-height: 90px;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero__h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 18px;
+  padding: 0 48px;
+}
+
+.hero__p {
+  max-width: 712px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    margin-top: -314px;
+    height: 757px;
+    width: 100%;
+    border-radius: 757px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .hero__logo {
+    margin-top: 421px;
+    display: inline-flex;
+    padding: 13.353px 11.235px 10.647px 11.765px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #2d2d2d;
+    background: #171717;
+  }
+  .hero__logo p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 56px;
+    max-height: 56px;
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hero__h1 {
+    font-size: 80px;
+    margin: 24px 0 16px 0;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero__p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 302px;
+  }
+}
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+}
+
+#cards {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  padding: 67px 0px 109px 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 32px;
+  border: 1px solid #2d2d2d;
+  background: #171717;
+  box-shadow: 0px 0px 56.4px 0px rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+  height: 354px;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
+  z-index: 3;
+}
+
+.card::after {
+  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4), transparent 40%);
+  z-index: 1;
+}
+
+.card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+.card-image {
+  width: 100%;
+  border-radius: 22px;
+  max-height: 276px;
+  z-index: 3;
+}
+
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 3;
+}
+.card-info-wrapper h2 {
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 24px 0 14px 10px;
+  margin-right: auto;
+}
+.card-info-wrapper svg {
+  margin: 10px 10px 0 0;
+}
+.card-info-wrapper p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 8px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 160% */
+}
+
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+@media (max-width: 1200px) {
+  #cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+  }
+}
+@media (max-width: 800px) {
+  #cards {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+@media (max-width: 430px) {
+  #cards {
+    grid-template-columns: 1fr;
+    max-width: none;
+    width: calc(100% - 24px);
+    padding: 68px 0px 35px 0px;
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+  .card {
+    border-radius: 32px;
+    border: 1px solid #2d2d2d;
+    background: #171717;
+    box-shadow: 0px 0px 56.4px 0px rgba(255, 255, 255, 0.05);
+    height: auto;
+  }
+  .card-image {
+    width: 100%;
+    border-radius: 22px;
+    max-height: none;
+    height: auto;
+    background-size: cover;
+  }
+  .card-info-wrapper h2 {
+    font-size: 24px;
+    padding: 20px 0 10px 10px;
+  }
+  .card-info-wrapper svg {
+    margin: 10px 10px 0 0;
+  }
+  .card-info-wrapper p {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+}
+.communication {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 121px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.communication h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.communication h3 a {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: underline;
+}
+.communication h3 a:hover {
+  text-decoration: none;
+}
+.communication p {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.communication__line {
+  width: 100%;
+  height: 2px;
+  background: #2d2d2d;
+  margin: 0 0 36px 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media screen and (max-width: 800px) {
+  .communication {
+    width: calc(100% - 24px);
+    margin-bottom: 94px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .communication h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  .communication h3 a {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  .communication h3 a:hover {
+    text-decoration: none;
+  }
+  .communication p {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+footer {
+  border-radius: 32px 32px 0px 0px;
+  border: 1px solid #2d2d2d;
+  border-bottom: none;
+  background: #171717;
+  padding: 34px 27px 33px 36px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer p {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer a {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  footer {
+    width: calc(100% - 24px);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+  footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  footer a {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    order: -1;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+}
+body {
+  background-color: #070707;
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
