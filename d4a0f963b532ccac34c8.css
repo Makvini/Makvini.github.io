@@ -115,7 +115,6 @@
   display: flex;
   flex-flow: row wrap;
   border-radius: 32px;
-  border: 1px solid #2d2d2d;
   background: #171717;
   box-shadow: 0px 0px 56.4px 0px rgba(255, 255, 255, 0.05);
   padding: 10px;
@@ -164,6 +163,7 @@
   padding: 10px;
   position: absolute;
   z-index: 2;
+  box-shadow: 0px 0px 0px 1px #2D2D2D;
 }
 
 /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
@@ -348,18 +348,28 @@ footer {
 }
 footer p {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
 footer a {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+  gap: 6px;
+  display: flex;
+  flex-direction: row;
 }
 footer a:hover {
   text-decoration: underline;
@@ -383,15 +393,22 @@ footer a:hover {
     font-weight: 500;
     line-height: normal;
   }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    order: -1;
+    gap: 18px;
+  }
   footer a {
     color: #fff;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
-    order: -1;
   }
   footer a:hover {
     text-decoration: underline;
