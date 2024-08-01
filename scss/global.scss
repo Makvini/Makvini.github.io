@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body {
+    background-color: #F6F5F4;
+    padding: 34px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Onest;
+    
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -72px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    padding: 0 24px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        padding: 0 12px;
+    }
+}
+
+
+@import "header";
+@import "hero";
+@import "exchange";
+@import "about-us";
+@import "step-slider";
+@import "_faq";
+@import "footer";
+
+@media screen and (max-width: 900px) {
+    body {
+        padding-top: 0;
+    }
+    main {
+        padding: 0px;
+        margin-top: 12px;
+    }
+    
+}

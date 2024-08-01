@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /static/
+Allow: /index.html
+
+Sitemap: https://cryptohub.exchange//sitemap.xml
