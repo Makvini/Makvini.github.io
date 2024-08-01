@@ -467,7 +467,7 @@ nav a span {
 .dropdown-content {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   border-radius: 8px;
   border: 1px solid #E6E8E9;
   background: var(--Grey-100, #F9FAFB);
@@ -547,7 +547,6 @@ nav a span {
 @media screen and (max-width: 768px) {
   .input-dropdown input {
     padding: 10px 12px 10px 16px;
-    color: rgba(31, 54, 60, 0.3);
     font-feature-settings: "ss09" on;
     font-family: Onest;
     font-size: 16px;
