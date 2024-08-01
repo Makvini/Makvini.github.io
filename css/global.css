@@ -1431,6 +1431,11 @@ footer {
 .footer-content__copyright ul li a svg {
   width: 24px;
   height: 24px;
+  color: rgba(255, 255, 255, 0.6980392157);
+  transition: color 0.2s ease-out;
+}
+.footer-content__copyright ul li a svg:hover {
+  color: #BBFABB;
 }
 
 .footer-content__link {

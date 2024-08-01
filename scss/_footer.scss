@@ -66,6 +66,11 @@ footer {
                 svg {
                     width: 24px;
                     height: 24px;
+                    color: #FFFFFFB2;
+                    transition: color 0.2s ease-out;
+                    &:hover {
+                        color: #BBFABB;
+                    }
                 }
             }
         }
