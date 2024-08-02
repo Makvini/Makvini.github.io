@@ -24,7 +24,10 @@
 }
 
 
-$time: 1.2s;
+$time: 0.6s;
+
+
+
 .slider {
     position: relative;
     height: 2500px;
@@ -38,6 +41,9 @@ $time: 1.2s;
     position: sticky;
     justify-content: flex-start;
     top: -320px;
+    @media screen and (max-width: 768px) {
+        top: 0px; 
+    } 
     @media screen and (min-height: 1250px) {
         top: 20px;
     }
@@ -54,10 +60,16 @@ $time: 1.2s;
         } 
         &.active { 
             animation: slideone $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slideoneM $time ease-out forwards;
+            }
         }
         &.disabled {
             transform: scale(0.8);
-            animation: slideoneBack 0.7s ease-out forwards;
+            animation: slideoneBack $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slideoneBackM $time ease-out forwards;
+            }
         }
         &.index-top {
             z-index: 4;
@@ -75,10 +87,16 @@ $time: 1.2s;
         } 
         &.active {
             animation: slidetwo $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slidetwoM $time ease-out forwards;
+            } 
         }
         &.disabled {
             transform: scale(0.8);
             animation: slidetwoBack $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slidetwoBackM $time ease-out forwards;
+            }
         }
         &.index-top {
             z-index: 4;
@@ -96,18 +114,22 @@ $time: 1.2s;
         } 
         &.active {
             animation: slidethree $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slidethreeM $time ease-out forwards;
+            } 
         }
         
         &.disabled {
             transform: scale(0.8);
             animation: slidethreeBack $time ease-out forwards;
+            @media screen and (max-width: 768px) {
+                animation: slidethreeBackM $time ease-out forwards;
+            } 
         }
     }
 }
 
-// #card1 { background-color: #ffdddd; }
-// #card2 { background-color: #ddffdd; transform: translateY(100%) scale(0.8); }
-// #card3 { background-color: #ddddff; transform: translateY(200%) scale(0.6); }
+
 
 @keyframes slideone {
     0% {
@@ -115,6 +137,7 @@ $time: 1.2s;
       }
       50% {
         top: 1100px;
+         
         
       }
       80% {
@@ -151,6 +174,7 @@ $time: 1.2s;
     50% {
       top: 1100px;
       
+      
     }
     80% {
         transform: scale(1.05);
@@ -158,7 +182,9 @@ $time: 1.2s;
     }
     100% {
       top: 420px;
+      
       z-index: 4;
+      
      
     }
   }
@@ -167,6 +193,7 @@ $time: 1.2s;
     0% {
       top: 420px;
       z-index: 4;
+       
     }
     50%{
         transform: scale(1.05);
@@ -182,6 +209,7 @@ $time: 1.2s;
   @keyframes slidethreeBack {
     0% {
       top: 420px;
+       
     }
     50%{
         transform: scale(1.05);
@@ -200,6 +228,7 @@ $time: 1.2s;
     }
     50% {
         top: 1100px;
+         
     }
     80% {
         transform: scale(1.05);
@@ -210,6 +239,109 @@ $time: 1.2s;
         z-index: 5;
     }
 }
+
+
+@keyframes slideoneM {
+    0% {
+            top: 0;
+      }
+      50% {
+            top: 1000px;  
+      }
+      80% {
+            transform: scale(1.05);
+            z-index: 4; 
+      }
+      100% {
+            top: 0px;
+            z-index: 4;
+       
+      }
+}
+
+@keyframes slideoneBackM {
+    0% {
+        top: 0px;
+      }
+      50%{
+          transform: scale(1.05);
+      }
+      70% {
+        top: -80px;
+    }
+      100% {
+        top: 0px;
+  
+      }
+    }
+
+@keyframes slidetwoM {
+    0% {
+      top: 0;
+    }
+    50% {
+        top: 1000px; 
+    }
+    80% {
+        transform: scale(1.05);
+        z-index: 4;
+    }
+    100% {
+        z-index: 4;
+        top: 200px;  
+    }
+  }
+
+  @keyframes slidetwoBackM {
+    0% {
+        z-index: 4;
+        top: 200px;  
+ 
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    70% {
+        top: -80px;
+    }
+    100% {
+      top: 0px;
+
+    }
+  }
+  @keyframes slidethreeBackM {
+    0% {
+        top: 200px;  
+    
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    70% {
+        top: -80px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  @keyframes slidethreeM {
+    0% {
+        top: 0;  
+    }
+    50% {
+        top: 1000px;    
+    }
+    80% {
+        transform: scale(1.05);
+        z-index: 5;
+    }
+    100% {
+        top: 200px;  
+        z-index: 5;
+    }
+}
+
   
 .marker {
     position: relative;
@@ -219,6 +351,10 @@ $time: 1.2s;
     z-index: 999;
     width: 50px;
     height: 300px;
+    @media screen and (max-width: 768px) {
+        height: 250px;
+        margin-top: -250px;
+    } 
 //    background-color: red;
 }
 
@@ -466,6 +602,7 @@ $time: 1.2s;
         height: 100%;
         @media screen and (max-width: 768px) {
             width: 100%;
+            object-fit: cover;
         } 
        
     border-radius: 32px;

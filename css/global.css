@@ -750,6 +750,11 @@ nav a span {
   justify-content: flex-start;
   top: -320px;
 }
+@media screen and (max-width: 768px) {
+  .step-slider {
+    top: 0px;
+  }
+}
 @media screen and (min-height: 1250px) {
   .step-slider {
     top: 20px;
@@ -769,11 +774,21 @@ nav a span {
   }
 }
 .step-slider .step-one.active {
-  animation: slideone 1.2s ease-out forwards;
+  animation: slideone 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-one.active {
+    animation: slideoneM 0.6s ease-out forwards;
+  }
 }
 .step-slider .step-one.disabled {
   transform: scale(0.8);
-  animation: slideoneBack 0.7s ease-out forwards;
+  animation: slideoneBack 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-one.disabled {
+    animation: slideoneBackM 0.6s ease-out forwards;
+  }
 }
 .step-slider .step-one.index-top {
   z-index: 4;
@@ -792,11 +807,21 @@ nav a span {
   }
 }
 .step-slider .step-two.active {
-  animation: slidetwo 1.2s ease-out forwards;
+  animation: slidetwo 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-two.active {
+    animation: slidetwoM 0.6s ease-out forwards;
+  }
 }
 .step-slider .step-two.disabled {
   transform: scale(0.8);
-  animation: slidetwoBack 1.2s ease-out forwards;
+  animation: slidetwoBack 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-two.disabled {
+    animation: slidetwoBackM 0.6s ease-out forwards;
+  }
 }
 .step-slider .step-two.index-top {
   z-index: 4;
@@ -815,11 +840,21 @@ nav a span {
   }
 }
 .step-slider .step-three.active {
-  animation: slidethree 1.2s ease-out forwards;
+  animation: slidethree 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-three.active {
+    animation: slidethreeM 0.6s ease-out forwards;
+  }
 }
 .step-slider .step-three.disabled {
   transform: scale(0.8);
-  animation: slidethreeBack 1.2s ease-out forwards;
+  animation: slidethreeBack 0.6s ease-out forwards;
+}
+@media screen and (max-width: 768px) {
+  .step-slider .step-three.disabled {
+    animation: slidethreeBackM 0.6s ease-out forwards;
+  }
 }
 
 @keyframes slideone {
@@ -913,6 +948,97 @@ nav a span {
     z-index: 5;
   }
 }
+@keyframes slideoneM {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 1000px;
+  }
+  80% {
+    transform: scale(1.05);
+    z-index: 4;
+  }
+  100% {
+    top: 0px;
+    z-index: 4;
+  }
+}
+@keyframes slideoneBackM {
+  0% {
+    top: 0px;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes slidetwoM {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 1000px;
+  }
+  80% {
+    transform: scale(1.05);
+    z-index: 4;
+  }
+  100% {
+    z-index: 4;
+    top: 200px;
+  }
+}
+@keyframes slidetwoBackM {
+  0% {
+    z-index: 4;
+    top: 200px;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes slidethreeBackM {
+  0% {
+    top: 200px;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes slidethreeM {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 1000px;
+  }
+  80% {
+    transform: scale(1.05);
+    z-index: 5;
+  }
+  100% {
+    top: 200px;
+    z-index: 5;
+  }
+}
 .marker {
   position: relative;
   top: 1500px;
@@ -921,6 +1047,12 @@ nav a span {
   z-index: 999;
   width: 50px;
   height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .marker {
+    height: 250px;
+    margin-top: -250px;
+  }
 }
 
 .step-one {
@@ -1190,6 +1322,7 @@ nav a span {
 @media screen and (max-width: 768px) {
   .img-container .slidshowImg1, .img-container .slidshowImg2, .img-container .slidshowImg3 {
     width: 100%;
+    object-fit: cover;
   }
 }
 .img-container .slidshowImg1.active, .img-container .slidshowImg2.active, .img-container .slidshowImg3.active {

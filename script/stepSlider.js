@@ -5,7 +5,7 @@ const runSlaidDown = (num) => {
     cards[num].classList.add("disabled");
     cards[num].classList.remove("active");
     cards[num + 1]?.classList.remove("disabled");
-    setTimeout(() => { cards[num + 1].classList.add("index-top"); }, 600);
+    setTimeout(() => { cards[num + 1].classList.add("index-top"); }, 300);
     
 }
 
@@ -14,9 +14,9 @@ const runSlaidUp = (num) => {
     cards[num].classList.add("disabled");
     cards[num].classList.remove("active");
     cards[num - 1]?.classList.remove("disabled");
-    setTimeout(() => { cards[num].classList.remove("index-top"); }, 600);
+    setTimeout(() => { cards[num].classList.remove("index-top"); }, 300);
     if (num === 1) {
-        setTimeout(() => { cards[num - 1].classList.add("index-top"); }, 600);
+        setTimeout(() => { cards[num - 1].classList.add("index-top"); }, 300);
     }
    
     // cards[num].classList.remove("index-top");
