@@ -208,21 +208,21 @@ const startSlaidShow = (index, slaid) => {
             start = 0;
             startIndex = 0;
         }
-        console.log(startIndex)
+     
     } else if (index !== "none") {
         start = index;
-        console.log(index)
+
     }
 
     arraySteps[slaid].forEach(element => {
         element.classList.remove("active");
-        console.log(element)
+       
     });
 
     arraySlidshowImg[slaid].forEach(element => {
         element.classList.remove("active");
     });
-    console.log(start, index)
+
     arraySlidshowImg[slaid][start].classList.add("active");
 
 
@@ -238,7 +238,6 @@ const startSlaidShow = (index, slaid) => {
         }
 
     } else {
-        console.log("HUH")
         return startIndex = 0;
     }
 }
@@ -278,16 +277,13 @@ const classNameToWatch = 'active'; // Назва класу, який потрі
 function onClassAdded(e) {
     switch (e) {
         case 'card1':
-            console.log("1")
             activeStatus(0, 0);
             break;
         case 'card2':
-            console.log("2")
             activeStatus(0, 1);
             break;
 
         case 'card3':
-            console.log("3")
             activeStatus(0, 2);
             break;
         default:
@@ -305,7 +301,6 @@ const observer = new MutationObserver((mutationsList) => {
         if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
             if (mutation.target.classList.contains(classNameToWatch)) {
                 onClassAdded(mutation.target.id);
-                console.log("LA")
             }
         }
     }
@@ -363,19 +358,22 @@ let touchEndX = 0;
 
 slider.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
+    console.log(touchStartX);
 });
 
 slider.addEventListener('touchend', (e) => {
     touchEndX = e.changedTouches[0].screenX;
     handleGesture();
+    console.log(touchEndX);
 });
 
 function handleGesture() {
-    if (touchEndX < touchStartX) {
+    if (touchEndX + 35 < touchStartX) {
         slider.scrollLeft += slider.offsetWidth;
+     
         nextSlide();
     }
-    if (touchEndX > touchStartX) {
+    if (touchEndX - 35 > touchStartX) {
         slider.scrollLeft -= slider.offsetWidth;
         prevSlide();
     }
