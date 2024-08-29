@@ -368,12 +368,12 @@ slider.addEventListener('touchend', (e) => {
 });
 
 function handleGesture() {
-    if (touchEndX + 35 < touchStartX) {
+    if (touchEndX + 60 < touchStartX) {
         slider.scrollLeft += slider.offsetWidth;
      
         nextSlide();
     }
-    if (touchEndX - 35 > touchStartX) {
+    if (touchEndX - 60 > touchStartX) {
         slider.scrollLeft -= slider.offsetWidth;
         prevSlide();
     }
