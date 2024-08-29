@@ -1,9 +1,9 @@
 .section-faq {
-    margin-top: 1340px;
+    margin-top: 140px;
     position: relative;
     z-index: 1;
     @media screen and (max-width: 768px) {
-        margin-top: 1240px;
+        margin-top: 140px;
     }
 }
 .faq {
@@ -136,6 +136,11 @@
         line-height: 110%; /* 19.8px */
         transition: all 0.3s ease-out;
         margin-top: 50px;
+        span {
+            font-size: 12px;
+            line-height: 100%; /* 19.8px */
+            color: rgba(31, 54, 60, 0.40);
+        }
         @media screen and (max-width: 768px) {
             color: rgba(31, 54, 60, 0.70);
             font-family: Onest;

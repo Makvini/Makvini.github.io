@@ -6,6 +6,10 @@
     <title>Cryptohub</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/global.css" rel="stylesheet" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
     <header>
@@ -61,8 +65,8 @@
         <section>
             <div class="hero">
                 <h1>Your Trusted Partner in <span>Cryptocurrency Exchange</span></h1>
-                <div class="method-pay"><img src="./static/swift_logo.svg" alt="swift logo"/><img src="./static/sepa_logo.svg" alt="sepa_logo"/><img src="./static/crypto_logo.svg" alt="crypto logo" /><img src="./static/visa_logo.svg" alt="visa and mastercard logo"/></div>
-                <p>Swap BTC, ETH, BNB & other altcoins for fiat and vice versa in just a few simple steps.</p>
+                <div class="method-pay"><img src="./static/swift_logo.svg" alt="swift logo"/><img src="./static/sepa_logo.svg" alt="sepa_logo"/><img src="./static/crypto_logo.svg" alt="crypto logo" /><img src="./static/usd-coin-usdc-logo.svg" alt="usdc logo" /><img src="./static/visa_logo.svg" alt="visa and mastercard logo"/></div>
+                <p>Swap ETH, USDC, USDT & other altcoins for fiat and vice versa in just a few simple steps.</p>
             </div>
             <div class="exchange">
                 <div class="exchange-container">
@@ -83,14 +87,14 @@
                     <div class="info-exchange"><p><span id="sell">1</span> <span id="curr">EUR</span> = <span id="buy">1.09</span> <span id="coin">USDT</span></p> <p>Updated: <span id="date">Friday 22:28</span></p></div>
                 </div>
                 <div class="exchange-container">
-                    <label for="inputCoin">You Spend</label>
+                    <label for="inputCoin">You Receive</label>
                     <div class="input-dropdown"><input placeholder="0.00" id="inputCoin"/> <div class="dropdown">
                         <button onclick="coinDropdown()" class="dropbtn"><span id="selectCoin"><img src="./static/usdtCurr.png" alt="eur" /> USDT</span><svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
                             <path d="M16.9831 18.5633L23.5895 11.957L25.477 13.8446L16.9831 22.3385L8.48926 13.8446L10.3768 11.957L16.9831 18.5633Z" fill="#1F363C"/>
                           </svg></button>
                         <div id="coinDropdown" class="dropdown-content">
-                            <button><img src="./static/usdtCurr.png" alt="usdt" />USDT</button>
-                            
+                            <button class="btn-coin"><img src="./static/usdtCurr.png" alt="usdt" />USDT</button>
+                            <button class="btn-coin"><img src="./static/usd-coin-usdc-logo.png" alt="usdt" />USDC</button> 
                     </div>
                   </div></div>
                 </div>
@@ -158,8 +162,11 @@
             <h3 class="step-h">A Comprehensive <span>Guide</span> for Using <span>CryptoHub</span> Exchange</h3>
             <div id="marker" class="marker"></div>
             <div class="step-slider">
-            
-                <div id="card1" class="step-one card disabled">
+                <div class="controll-btn">
+                    <button id="prev" class="hidden"><i class="ri-arrow-left-line"></i></button>
+                    <button id="next"><i class="ri-arrow-right-line"></i></button>
+                </div>
+                <div id="card1" class="step-one card active">
                     <p class="title-slider"><span>Step 1<br></span> Registration<br>
                         Process
                     </p>
@@ -181,7 +188,7 @@
                 </div>
                 
 
-                <div id="card2" class="step-two card disabled">
+                <div id="card2" class="step-two card right">
                     <p class="title-slider white"><span>Step 2<br></span> Adding a Bank Account and USDT Wallet</p>
                     <div class="slidshow">
                         <ul>
@@ -202,7 +209,7 @@
                 </div>
                 <!-- <div class="marker"></div> -->
 
-                <div id="card3" class="step-three card disabled">
+                <div id="card3" class="step-three card right">
                     <p class="title-slider white"><span>Step 3<br></span> Exchange <br>Process</p>
                     <div class="slidshow">
                         <ul>
@@ -231,30 +238,28 @@
 
                     <div class="question-item">
                         <div class="question-item__top"><p>Are there any daily exchange limits?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">
+                        
+                            Clients without a verification – €1000 per day<br>
+KYC-verified customers – €10 000 per day<br>
+Users with AML Verification – €100 000 per day<br>
+
+                        </p>
+
+                            
                     </div>
 
 
                     <div class="question-item">
                         <div class="question-item__top"><p>Can I buy a crypto with a credit card?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">For now, you can make exchange operations via the SEPA/SWIFT systems and USDT (TRC-20) chain. But soon you'll also be able to buy cryptocurrency with Visa & Mastercard.</p>
                     </div>
 
                     <div class="question-item">
                         <div class="question-item__top"><p>What is KYC, and why do I need to complete it?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">Know Your Customer (KYC) is a regulatory requirement to verify user identities, helping prevent fraud and ensure compliance with financial regulations. To complete KYC, submit identification documents like a passport or driver’s license.<br>
+                           <span>*This information is kept confidential and used solely for verification purposes*</span>
+                            </p>
                     </div>
 
                     <div class="question-item">
@@ -268,30 +273,18 @@
 
                     <div class="question-item">
                         <div class="question-item__top"><p>Can I use fiat currency to buy crypto?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">Yes, you can use fiat currencies like USD, EUR, etc., via bank transfers and credit/debit cards when we add this feature.</p>
                     </div>
 
                     <div class="question-item z-index-1">
                         <div class="question-item__top"><p>What should I do if I suspect unauthorized activity on my account?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">Immediately change your password, enable 2FA, and contact our customer support for assistance.</p>
                     </div>
 
 
                     <div class="question-item z-index-1">
                         <div class="question-item__top"><p>How do I report a problem with a transaction?</p> <img class="open" src="./static/add-line.svg" alt="+"/><img class="close" src="./static/delete-line.svg" alt="-"/></div>
-                        <p class="question-item__bot">1. Go to the login page and click on the "Forgot Password" link.<br>
-                            2. Enter your registered email address and submit.<br>
-                            3. Check your email for a password reset link.<br>
-                            4. Click the link and follow the instructions to create a new password.<br>
-                            5. Log in with your new password.</p>
+                        <p class="question-item__bot">If you encounter an issue with a transaction, contact customer support with the transaction details. For each transaction, we assign a dedicated manager who oversees the entire process and can assist you in resolving any problems.</p>
                     </div>
 
                     

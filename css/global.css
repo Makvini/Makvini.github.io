@@ -28,6 +28,9 @@ section {
   section {
     padding: 0 12px;
   }
+  section.slider {
+    padding: 0 24px;
+  }
 }
 
 header {
@@ -737,7 +740,6 @@ nav a span {
 
 .slider {
   position: relative;
-  height: 2500px;
   z-index: 2;
 }
 
@@ -748,311 +750,87 @@ nav a span {
   flex-direction: column;
   position: sticky;
   justify-content: flex-start;
-  top: -320px;
+  height: 825px;
 }
 @media screen and (max-width: 768px) {
   .step-slider {
-    top: 0px;
-  }
-}
-@media screen and (min-height: 1250px) {
-  .step-slider {
-    top: 20px;
-  }
-}
-.step-slider .step-one {
-  width: 100%;
-  height: 825px;
-  z-index: 4;
-  position: absolute;
-  transition: all 0.3s ease-out;
-  top: 0;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-one {
     height: 716px;
   }
 }
-.step-slider .step-one.active {
-  animation: slideone 0.6s ease-out forwards;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-one.active {
-    animation: slideoneM 0.6s ease-out forwards;
-  }
-}
-.step-slider .step-one.disabled {
-  transform: scale(0.8);
-  animation: slideoneBack 0.6s ease-out forwards;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-one.disabled {
-    animation: slideoneBackM 0.6s ease-out forwards;
-  }
-}
-.step-slider .step-one.index-top {
-  z-index: 4;
-}
-.step-slider .step-two {
+.step-slider .card {
   width: 100%;
   height: 825px;
-  z-index: 3;
   position: absolute;
-  transition: all 0.3s ease-out;
   top: 0;
 }
 @media screen and (max-width: 768px) {
-  .step-slider .step-two {
+  .step-slider .card {
     height: 716px;
   }
 }
-.step-slider .step-two.active {
-  animation: slidetwo 0.6s ease-out forwards;
+.step-slider .card.active {
+  left: 0dvw;
+  transform: scale(1);
+  transition: left 0.5s ease-out, transform 0.5s ease-out;
 }
-@media screen and (max-width: 768px) {
-  .step-slider .step-two.active {
-    animation: slidetwoM 0.6s ease-out forwards;
-  }
+.step-slider .card.left {
+  transform: scale(0.9);
+  left: -100dvw;
+  transition: left 0.5s ease-out, transform 0.5s ease-out;
 }
-.step-slider .step-two.disabled {
-  transform: scale(0.8);
-  animation: slidetwoBack 0.6s ease-out forwards;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-two.disabled {
-    animation: slidetwoBackM 0.6s ease-out forwards;
-  }
-}
-.step-slider .step-two.index-top {
-  z-index: 4;
-}
-.step-slider .step-three {
-  width: 100%;
-  height: 825px;
-  z-index: 2;
-  position: absolute;
-  transition: all 0.3s ease-out;
-  top: 0;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-three {
-    height: 716px;
-  }
-}
-.step-slider .step-three.active {
-  animation: slidethree 0.6s ease-out forwards;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-three.active {
-    animation: slidethreeM 0.6s ease-out forwards;
-  }
-}
-.step-slider .step-three.disabled {
-  transform: scale(0.8);
-  animation: slidethreeBack 0.6s ease-out forwards;
-}
-@media screen and (max-width: 768px) {
-  .step-slider .step-three.disabled {
-    animation: slidethreeBackM 0.6s ease-out forwards;
-  }
+.step-slider .card.right {
+  transform: scale(0.9);
+  left: 7dvw;
+  transition: left 0.5s ease-out, transform 0.5s ease-out;
 }
 
-@keyframes slideone {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1100px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 4;
-  }
-  100% {
-    top: 0px;
-    z-index: 4;
-  }
-}
-@keyframes slideoneBack {
-  0% {
-    top: 0px;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidetwo {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1100px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 4;
-  }
-  100% {
-    top: 420px;
-    z-index: 4;
-  }
-}
-@keyframes slidetwoBack {
-  0% {
-    top: 420px;
-    z-index: 4;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidethreeBack {
-  0% {
-    top: 420px;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidethree {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1100px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 5;
-  }
-  100% {
-    top: 420px;
-    z-index: 5;
-  }
-}
-@keyframes slideoneM {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1000px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 4;
-  }
-  100% {
-    top: 0px;
-    z-index: 4;
-  }
-}
-@keyframes slideoneBackM {
-  0% {
-    top: 0px;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidetwoM {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1000px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 4;
-  }
-  100% {
-    z-index: 4;
-    top: 200px;
-  }
-}
-@keyframes slidetwoBackM {
-  0% {
-    z-index: 4;
-    top: 200px;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidethreeBackM {
-  0% {
-    top: 200px;
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  70% {
-    top: -80px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-@keyframes slidethreeM {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 1000px;
-  }
-  80% {
-    transform: scale(1.05);
-    z-index: 5;
-  }
-  100% {
-    top: 200px;
-    z-index: 5;
-  }
-}
-.marker {
-  position: relative;
-  top: 1500px;
-  left: 0;
-  margin-top: -300px;
-  z-index: 999;
-  width: 50px;
-  height: 300px;
+.controll-btn {
+  position: absolute;
+  z-index: 5;
+  width: calc(100% + 200px);
+  height: 100%;
+  left: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .marker {
-    height: 250px;
-    margin-top: -250px;
+  .controll-btn {
+    width: 100%;
+    left: 0;
+    bottom: -95px;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
   }
+}
+.controll-btn button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #00BE61;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+.controll-btn button.hidden {
+  cursor: default;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .controll-btn button.hidden {
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+}
+.controll-btn button:hover {
+  background: #107A3D;
+}
+.controll-btn button i {
+  color: #F9F9F9;
+  font-size: 48px;
 }
 
 .step-one {
@@ -1062,6 +840,7 @@ nav a span {
   border: 1px solid rgba(31, 54, 60, 0.05);
   background: #FFF;
   box-shadow: 0px 31px 32px 0px rgba(31, 54, 60, 0.05);
+  z-index: 3;
 }
 @media screen and (max-width: 900px) {
   .step-one {
@@ -1076,6 +855,7 @@ nav a span {
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: #1F363C;
   box-shadow: 0px 31px 32px 0px rgba(31, 54, 60, 0.05);
+  z-index: 2;
 }
 @media screen and (max-width: 900px) {
   .step-two {
@@ -1330,13 +1110,13 @@ nav a span {
 }
 
 .section-faq {
-  margin-top: 1340px;
+  margin-top: 140px;
   position: relative;
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .section-faq {
-    margin-top: 1240px;
+    margin-top: 140px;
   }
 }
 
@@ -1476,6 +1256,11 @@ nav a span {
   line-height: 110%; /* 19.8px */
   transition: all 0.3s ease-out;
   margin-top: 50px;
+}
+.faq .question-item__bot span {
+  font-size: 12px;
+  line-height: 100%; /* 19.8px */
+  color: rgba(31, 54, 60, 0.4);
 }
 @media screen and (max-width: 768px) {
   .faq .question-item__bot {

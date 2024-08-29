@@ -6,7 +6,7 @@ const runSlaidDown = (num) => {
     cards[num].classList.remove("active");
     cards[num + 1]?.classList.remove("disabled");
     setTimeout(() => { cards[num + 1].classList.add("index-top"); }, 300);
-    
+
 }
 
 const runSlaidUp = (num) => {
@@ -18,7 +18,7 @@ const runSlaidUp = (num) => {
     if (num === 1) {
         setTimeout(() => { cards[num - 1].classList.add("index-top"); }, 300);
     }
-   
+
     // cards[num].classList.remove("index-top");
 }
 
@@ -41,30 +41,50 @@ function handleIntersection(entries, observer) {
             if (entry.boundingClientRect.top < 0) {
                 console.log('Елемент заходить у зону видимості з низу');
 
-                runSlaidUp(2);
+
+
+
+                cards[1].classList.add("active");
+
+                cards[0].classList.remove("active");
+
+                cards[1].classList.remove("right");
+
+                cards[0].classList.add("left");
+
+
+
+
+
             } else if (entry.boundingClientRect.bottom > window.innerHeight) {
                 console.log('Елемент заходить у зону видимості з верху');
 
+                cards[1].classList.add("active");
 
-                runSlaidDown(0);
+                cards[0].classList.remove("active");
+
+                cards[1].classList.remove("right");
+
+                cards[0].classList.add("left");
+
 
             } else if (!flag) {
 
-                runSlaidDown(0);
+
                 return flag = true;
             }
         } else {
             if (entry.boundingClientRect.top < 0) {
                 console.log('Елемент виходить з зони видимості з верху');
                 if (!firstLoadingDown) {
-                    runSlaidDown(0);
+
                     firstLoadingDown = true;
                 }
-                runSlaidDown(1);
+
 
             } else if (entry.boundingClientRect.bottom > window.innerHeight) {
                 console.log('Елемент виходить з зони видимості з низу');
-                runSlaidUp(1);
+
             }
         }
     });
@@ -88,10 +108,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const prev = document.querySelector("#prev");
+
+const next = document.querySelector("#next");
 
 
+let j = 0;
+
+const prevSlide = () => {
+
+    
+    next.classList.remove("hidden");
+    if (j != 0) {
+
+        cards[j - 1].classList.add("active");
+
+        cards[j].classList.remove("active");
+
+        cards[j - 1].classList.remove("left");
+
+        cards[j].classList.add("right");
+
+        if (j === 1) {
+
+            prev.classList.add("hidden");
+    
+        }
+
+        j--
+
+    } 
 
 
+}
+
+const nextSlide = () => {
+    prev.classList.remove("hidden");
+    if (j < 3) {
+
+        cards[j + 1].classList.add("active");
+
+        cards[j].classList.remove("active");
+    
+        cards[j + 1].classList.remove("right");
+    
+        cards[j].classList.add("left");
+    
+        j++
+
+    }
+
+
+    if (cards[j + 1] === undefined) {
+
+        next.classList.add("hidden");
+
+    }
+
+}
+
+prev.addEventListener('click', () => {
+    prevSlide();
+});
+
+next.addEventListener('click', () => {
+    nextSlide();
+});
 
 
 
@@ -136,14 +218,14 @@ const startSlaidShow = (index, slaid) => {
         element.classList.remove("active");
         console.log(element)
     });
- 
+
     arraySlidshowImg[slaid].forEach(element => {
         element.classList.remove("active");
     });
     console.log(start, index)
     arraySlidshowImg[slaid][start].classList.add("active");
 
- 
+
     arraySteps[slaid][start].classList.remove("active");
     setTimeout(() => arraySteps[slaid][start].classList.add("active"), 10);
 
@@ -236,3 +318,65 @@ const config = { attributes: true };
 observer.observe(targetNode1, config);
 observer.observe(targetNode2, config);
 observer.observe(targetNode3, config);
+
+
+
+
+
+
+
+
+
+const slider = document.querySelector('.slider');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // * 2 для прискорення свайпу
+    slider.scrollLeft = scrollLeft - walk;
+});
+
+// Swipe touch events for mobile devices
+let touchStartX = 0;
+let touchEndX = 0;
+
+slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+});
+
+function handleGesture() {
+    if (touchEndX < touchStartX) {
+        slider.scrollLeft += slider.offsetWidth;
+        nextSlide();
+    }
+    if (touchEndX > touchStartX) {
+        slider.scrollLeft -= slider.offsetWidth;
+        prevSlide();
+    }
+}

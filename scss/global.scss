@@ -26,6 +26,9 @@ section {
     box-sizing: border-box;
     @media screen and (max-width: 768px) {
         padding: 0 12px;
+        &.slider {
+            padding: 0 24px;
+        }
     }
 }
 
