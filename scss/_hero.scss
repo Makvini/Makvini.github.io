@@ -40,6 +40,11 @@
         &:first-child {
             height: 35px;
         }
+
+        .first {
+            height: 35px;
+            width: 100px;
+        }
        
     }
     @media screen and (max-width: 900px) {
@@ -48,6 +53,11 @@
             padding: 20px 16px;
             img {
                 height: 24px;
+                width: auto;
+            }
+            .first {
+                height: 24px;
+                width: auto;
             }
         }
     }

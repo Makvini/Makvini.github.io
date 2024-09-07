@@ -215,6 +215,10 @@ nav a span {
 .hero .method-pay:first-child {
   height: 35px;
 }
+.hero .method-pay .first {
+  height: 35px;
+  width: 100px;
+}
 @media screen and (max-width: 900px) {
   .hero .method-pay {
     gap: 20px;
@@ -222,6 +226,11 @@ nav a span {
   }
   .hero .method-pay img {
     height: 24px;
+    width: auto;
+  }
+  .hero .method-pay .first {
+    height: 24px;
+    width: auto;
   }
 }
 .hero p {
