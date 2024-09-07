@@ -37,7 +37,9 @@
         background: linear-gradient(90deg, rgba(187, 250, 187, 0.00) 0%, rgba(187, 250, 187, 0.30) 49.82%, rgba(187, 250, 187, 0.00) 100%);
         backdrop-filter: blur(7.300000190734863px);
         box-sizing: border-box;
-        
+        &:first-child {
+            height: 35px;
+        }
        
     }
     @media screen and (max-width: 900px) {

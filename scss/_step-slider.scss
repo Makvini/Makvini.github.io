@@ -81,10 +81,11 @@ $timeCenter: 0.5s;
 
 .controll-btn {
     position: absolute;
-    z-index: 0;
-    width: calc(100% + 200px);
+    z-index: 5;
+
+    width: calc(100% + 7dvw);
     height: 100%;
-    left: -100px;
+    left: -3.5dvw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

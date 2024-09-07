@@ -212,6 +212,9 @@ nav a span {
   backdrop-filter: blur(7.3000001907px);
   box-sizing: border-box;
 }
+.hero .method-pay:first-child {
+  height: 35px;
+}
 @media screen and (max-width: 900px) {
   .hero .method-pay {
     gap: 20px;
@@ -786,10 +789,10 @@ nav a span {
 
 .controll-btn {
   position: absolute;
-  z-index: 0;
-  width: calc(100% + 200px);
+  z-index: 5;
+  width: calc(100% + 7dvw);
   height: 100%;
-  left: -100px;
+  left: -3.5dvw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
